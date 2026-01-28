@@ -9703,3 +9703,12 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+@media (max-width: 767.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+}
