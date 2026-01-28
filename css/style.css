@@ -9712,3 +9712,76 @@ textarea.form-control {
     text-align: center;
   }
 }
+@media (max-width: 767.98px) {
+  .owl-carousel.home-slider,
+  .owl-carousel.home-slider .slider-item,
+  .owl-carousel.home-slider .slider-item .slider-text {
+    height: auto !important;
+    min-height: 100vh;
+  }
+}
+@media (max-width: 767.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+}
+/* =========================================================
+   MOBILE HERO FIX — PASTE AT VERY END OF CSS
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+
+  /* Allow hero section to grow naturally */
+  .owl-carousel.home-slider,
+  .owl-carousel.home-slider .slider-item,
+  .owl-carousel.home-slider .slider-item .slider-text {
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible !important;
+  }
+
+  /* Prevent text overlay on image */
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  /* Remove vertical centering that cuts text */
+  .owl-carousel.home-slider .slider-item
+  .slider-text .one-forth .text {
+    position: static !important;
+    transform: none !important;
+    top: auto !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Make image stack below text */
+  .owl-carousel.home-slider .slider-item .slider-text .one-third {
+    width: 100% !important;
+    position: relative !important;
+    z-index: 0;
+    margin-top: 1.5rem;
+  }
+
+  /* Mobile-friendly text sizes */
+  .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text h2 {
+    font-size: 22px;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text p {
+    font-size: 16px;
+  }
+}
