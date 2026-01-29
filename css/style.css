@@ -9785,3 +9785,51 @@ textarea.form-control {
     font-size: 16px;
   }
 }
+/* =========================================================
+   MOBILE TEXT CUT FIX — SECTIONS & ABOUT ME
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+
+  /* Allow all major sections to grow naturally */
+  section,
+  .ftco-section,
+  .ftco-about,
+  .ftco-counter,
+  .resume-wrap,
+  .services-1,
+  .contact-section,
+  .progress-wrap {
+    height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Fix About Me text being cut */
+  .ftco-about .text,
+  .ftco-about .desc,
+  .ftco-about p {
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+
+  /* Prevent flex containers from stretching and cutting content */
+  .row,
+  .d-flex {
+    align-items: flex-start !important;
+  }
+
+  /* Remove viewport-height forcing on mobile */
+  .ftco-vh-100 {
+    height: auto !important;
+    min-height: auto !important;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /* Ensure progress/skill bars don’t hide text */
+  .progress,
+  .progress-wrap {
+    overflow: visible !important;
+  }
+}
